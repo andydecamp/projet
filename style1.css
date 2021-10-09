@@ -1,0 +1,340 @@
+*{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    font-family: montserrat;
+    background-image: url('./image/terrain1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+ .logo{
+
+    font-size:35px;
+     font-weight: bold;
+     color:white;
+     padding:0 100px;
+     line-height:80px;
+     width: 100%;
+     font-size: 33px;
+     background: rgba(3, 35, 43, 0.918);
+    
+
+}
+
+.navbar ul {
+    flex-direction: column;
+    margin:30px;
+    border: 1px solid black;
+    width: 300px;
+    height: 100vh;
+    padding: 40px;
+    font-family: montserrat;
+    font-size: 20px;
+    background:rgba(3, 35, 43, 0.918) ;
+
+}
+
+.navbar a{
+     text-decoration: none;
+     font-size: 20px;
+     color: aliceblue;
+     padding: 7px 10px;
+     text-transform: uppercase;
+     border:1px solid transparent;
+   
+
+}
+
+a.active,a:hover{
+    border:1px solid white;
+    transition: 5.s;
+}
+
+.navbar a:hover{
+    background: aliceblue;
+    color:rgba(3, 35, 43, 0.918);
+}
+.navbar li{
+    list-style: none;
+    padding:5px;
+    line-height: 80px;
+    border:none;
+    padding: 0.2rem;
+    background: transparent;
+    border-radius: 5px;
+    margin-bottom:10px ;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+
+.hamburger{
+    font-size: 30px;
+    color:white;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#toggler{
+    display:none;
+}
+
+div.tab{
+    text-align: center;
+}
+.milieu{
+    margin-left: 500px;
+    margin-top:-1000px;
+    
+}
+.milieu1{
+    margin-left: 500px;
+    margin-top:-750px;
+
+}
+
+.groupeB{
+    margin-top:-220px;
+
+}
+.tableauBut{
+    margin-top:-220px;
+    margin-left: 60px;
+
+}
+.tableau-style{
+    border-collapse:collapse;
+    min-width:400px;
+    margin:300px 0 0 0;
+    width:auto;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    cursor:pointer;
+    font-family: montserrat;
+}
+
+thead tr{
+    background-color:rgba(3, 35, 43, 0.918); 
+    color:#fff;
+    text-align: center;
+
+}
+
+th,td{
+    padding:15px 20px;
+}
+tbody tr,td,th {
+    border:1px solid white;  
+}
+
+
+tbody tr{
+   background-color:rgba(0, 0, 0, 0.808); 
+   color:white;
+}
+/* design des drapeaux */
+.dra{
+   margin-left: 10px;
+   text-align: center;
+}
+/* bouton envoie */
+.envoie{
+  margin-right:250px;
+  margin-top: 40px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.877);
+  cursor: pointer;
+  border-radius:0.5rem ;
+  
+}
+.envoie1{
+  width:100px;
+  margin-left: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.877);
+  cursor: pointer;
+  border-radius:0.5rem ;
+}
+.envoie1 a{
+    padding: 10px;
+    color: white;
+    border: none;
+
+}
+
+.envoie2{
+    width:150px;
+    margin-left: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.877);
+    cursor: pointer;
+    border-radius:0.5rem ;
+}
+
+.envoie3{
+    width:200px;
+    margin-left: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.877);
+    cursor: pointer;
+    border-radius:0.5rem ;
+
+}
+/* design des groupes tableau */
+.grp{
+   margin-top: -200px;
+   text-align: center;
+   margin-left: 80px;
+
+
+}
+
+.champs{
+    padding:7px;
+    color:#fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+     text-decoration: none;
+     border:1px solid #ddd;
+     border-radius: 4px;
+     border:none;
+}
+
+/*---------------------- ANIMATION BOUL LA =----------------------*/
+
+.boite1{
+    width:200px;
+    margin-left: 700px;
+    margin-top:-200px;
+
+}
+.boite1 a{
+    padding:15px;
+}
+
+
+
+/*  partie responsive */
+
+@media only screen and  (max-width: 1024px){
+    
+    body{
+        max-width: 100%;
+        height: 735px;
+        background-image:url('./image/Football-Image-02-1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color:#2f3640;
+    }
+
+  
+ 
+    .logo{
+        color:white;
+        text-align: center;
+        font-size:20px ;
+    }
+    .navbar {
+        display:none;
+         width:100%;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 30px;
+        color:white;
+        cursor: pointer; 
+    }
+    
+
+    #toggler:checked + .navbar{
+       
+        display:block;
+    }
+
+    .navbar ul{
+      flex-direction: column;
+      align-items: center;
+      float: center;
+      margin-left: 0px;
+    }
+
+    /* partie tableau */
+div.tab{
+    text-align: center;
+}
+
+
+
+.tableau-style{
+    border-collapse:collapse;
+    min-width:30px;
+    width:auto;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+    cursor:pointer;
+    margin:30px auto;
+    border:1px solid #ddd;
+    font-family: montserrat;
+}
+
+thead tr{
+    background-color:rgba(3, 35, 43, 0.918); 
+    color:#fff;
+    text-align: center;
+
+}
+
+th,td{
+    padding:5px 10px;
+}
+tbody tr,td,th {
+    border:1px solid white;  
+}
+
+
+tbody tr{
+   background-color:rgba(0, 0, 0, 0.808); 
+   color:white;
+}
+/* design des drapeaux */
+.dra{
+   margin-left: 5px;
+   text-align: center;
+}
+/* bouton envoie */
+.envoie{
+  padding: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.877);
+  cursor: pointer;
+  border-radius:0.5rem ;
+}
+/* design des groupes tableau */
+.grp{
+   margin-top: 10px;
+   text-align: center;
+
+}
+
+
+
+
+
+
+}
